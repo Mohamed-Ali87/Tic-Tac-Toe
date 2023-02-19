@@ -9,13 +9,9 @@ body {
     margin: 10px;
     }
     .flex-container {
-    /* In order to use flex-box we need to first set our display property */
     display: flex;
-    /* center the container horizontally */
     justify-content: center;
-    /* this will center content vertically */
     align-items: center;
-    /* tells the container to align the children in columns rather than rows */
     }
     .flex-column {
     height: 100%;
@@ -23,7 +19,6 @@ body {
     flex-direction: column;
     }
     .flex-wrap {
-    /* tells the container to drop down once it reaches max-width */
     flex-wrap: wrap;
     height: 432px;
     width: 432px;

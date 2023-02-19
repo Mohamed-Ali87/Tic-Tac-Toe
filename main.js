@@ -19,8 +19,6 @@ const squares = Array.from(document.querySelectorAll('#board div'));
 const messages = document.querySelector('h2');
 /*----- event listeners -----*/
 document.getElementById('board').addEventListener('click', handleTurn);
-//document.getElementById('board').addEventListener('click', handleMove);
-//new code
 document.getElementById('reset-button').addEventListener('click', init);
 
 /*----- functions -----*/
@@ -47,8 +45,7 @@ init();
 
 
 function render() {
-    board.forEach(function(mark, index) {
-    //this sets the text content of the square of the same position to the mark on the board. 
+    board.forEach(function(mark, index) { 
     squares[index].textContent = mark;
     });
     messages.textContent = win === 'T' ? `That's a tie` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
